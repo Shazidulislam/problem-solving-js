@@ -69,6 +69,77 @@ const findCommonNumber=(num)=>{
 const larzeCommon = findCommonNumber(commonNumber)
 console.log(larzeCommon)
 
+// provlem 6
+const totalSumOfNumber=(num)=>{
+  let sum = 0;
+
+  for(i=1;i<num.length; i++){
+    sum +=num[i]
+  }
+  return sum
+}
+
+const result = totalSumOfNumber([2,4,5,6])
+console.log(result)
+
+//problem 7
+
+const findEvenNumber=(numbers)=>{
+  const result = []
+  for(let num of numbers ){
+   if(num % 2 === 0){
+     result.push(num)
+   }
+  }
+  return result
+}
+
+const evenResult = findEvenNumber([2,4,5,6,8,9,11,23,24])
+console.log("even number" , evenResult)
+
+//problem 8
+const makeCapitalizes =(sen)=>{
+  const words = sen?.split(" ")
+  let result = "" ;
+
+  for(let word of words ){
+    result += word.charAt(0).toUpperCase()+word.slice(1)+" ";
+
+  }
+  return result.trim()
+}
+
+const capitalResult = makeCapitalizes("shamim ahasun shazid")
+console.log(capitalResult)
+
+//problem 9
+const factorial=(num)=>{
+     let result = 1;
+     for(let i = 2; i <= num ; i++){
+         result = result * i ;
+     }
+     return result
+}
+
+const factorialResult =factorial(5)
+console.log(factorialResult)
+
+//problem 10
+
+const lastPingPong=(num)=>{
+  for(let i = 1; i <=20 ; i++){
+    if(i % 3 === 0 && i % 5 === 0) console.log("PingPong")
+    else if(i % 5 === 0)  console.log("Pong")
+    else if(i % 3 === 0)  console.log("Ping")
+   else{
+   console.log(i)
+  }
+  }
+
+}
+lastPingPong()
+// const pingPongResult = lastPingPong()
+// console.log(pingPongResult)
 
 
 
