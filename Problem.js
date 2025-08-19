@@ -1,16 +1,35 @@
-const problem1 = (a, b)=>{
-  const sum = a+b
-  console.log(sum)
-}
-problem1(3,8)
+
 
 // Problem 1
+const stringReverce = (str)=>{
+  const result = str?.split("").reverse().join("")
+  return result
+}
+console.log(stringReverce("shazidul"))
 
 
 //Problem 2
+const vowelsCount =(string)=>{
+   const vowels = "aeiouAEIOU"
+   let count = 0;
+
+   for(let str of string){
+    if(vowels.includes(str)){
+      count++
+    }
+   }
+   return count
+} 
+console.log(vowelsCount("programming"))
 
 //Problem 3
-
+const checksPalindrome =(str)=>{
+  const result = str.split("").reverse().join("")
+  if(str === result)return true
+   return false
+} 
+const plaindromeResult =checksPalindrome("madamw")
+console.log("3number",plaindromeResult)
 //Problem 4
 //category-1
 const findLargeNumber=(numbers)=>{
